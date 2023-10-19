@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "esquerda direita";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+}
+
+.esquerda{
+    grid-area: "esquerda";  
+    border: 1px solid black;
+}
+
+.formulario{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.direita{
+    grid-area: "direita"
+}
+
+#img_vector{
+    width: 218px;
+}
+
+#img_create{
+    width: 212px
+}
