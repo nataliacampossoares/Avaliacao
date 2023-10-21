@@ -43,11 +43,11 @@ p{
     grid-area: "topo";
 }
 
-#img_login{
+#img_register{
     transition: transform 0.2s;
 }
 
-#img_login:hover{
+#img_register:hover{
     transform: scale(1.05);
 }
 
@@ -58,6 +58,14 @@ p{
     align-items: center;
     gap: 50px;
     grid-area: "imagens";
+}
+
+#img_vector{
+    width: 218px;
+}
+
+#img_create{
+    width: 212px
 }
 
 .formulario{
@@ -86,12 +94,12 @@ input{
     border: none;
 }
 
-#senha{
+#esqueceu_senha{
     font-size: small;
     display: flex;
     width: 100%;
     justify-content: end;
-    color: var(--cor-senha)
+    color: var(--cor-senha);
 }
 
 button{
@@ -118,3 +126,4 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+

@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./register.css">
+    
 </head>
 <body>
     <div class="container">
-        <div class="esquerda">
-            <div class="topo">
-                <a href="../login/login.html"><p id="img_login"><img src="../imagens/Login2.png" alt=""></p></a>
-                <p><img src="../imagens/Register2.png" alt=""></p>
-            </div>
-            <div class="imagens">
-                <img src="../imagens/Vector.png" alt="">
-                <img src="../imagens/Login into your account.png" alt="">
-            </div>
-            <div class="formulario">
-                <div class="input">
-                    <p>Email Address</p>
-                    <input type="email">
-                </div> 
 
-                <div class="input">
-                    <p>Password</p>
-                    <input type="password">
-                    <p><a href="" id="senha">Forgot password?</a> </p>
+        <div class="esquerda">
+
+            <div class="topo">
+                <a href="../login/login.html"><p id="img_register"><img src="../imagens/Login.png" alt=""></p></a> 
+                <p><img src="../imagens/Register.png"></p>
             </div>
+
+            <div class="imagens">
+                <img src="../imagens/Vector.png" alt="" id="img_vector">
+                <img src="../imagens/Create your account.png" alt="" id="img_create">
             </div>
-            <button><img src="../imagens/botao_login.png" alt=""></button>
+
+                <div class="formulario">
+
+                    <div class="input">
+                        <p>Full Name</p>
+                        <input type="text" id="nome">
+                    </div> 
+    
+                    <div class="input">
+                        <p>E-mail</p>
+                        <input type="email" id="email">
+                    </div>
+    
+                    <div class="input">
+                        <p>Password</p>
+                        <input type="password" id="senha">
+                        <p><a href="" id="esqueceu_senha">Forgot password?</a> </p>
+                </div>
+                
+                </div>
+                <button onclick="enviar()"><img src="../imagens/Group 4.png"></button>
+
+                <script src="./register.js"></script>
+
         </div>
-        <div class="direita"><img src="../imagens/login-illustrator.png" alt=""></div>
+        <div class="direita">
+            <img src="../imagens/login-illustrator.png" alt="">
+        </div>
     </div>
 </body>
 </html>
