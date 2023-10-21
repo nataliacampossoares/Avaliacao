@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@100;300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "esquerda direita";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+}
+
+.esquerda{
+    grid-area: "esquerda";  
+    display: grid;
+    grid-template-areas: 
+    "topo"
+    "imagens"
+    "formulario"
+    "botao";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 45% 20%;
+}
+
+p{
+    font-family: 'Poppins';
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    grid-area: "topo";
+}
+
+#img_register{
+    transition: transform 0.2s;
+}
+
+#img_register:hover{
+    transform: scale(1.05);
+}
+
+.imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    grid-area: "imagens";
+}
+
+#img_vector{
+    width: 218px;
+}
+
+#img_create{
+    width: 212px
+}
+
+.formulario{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+    grid-area: "formulario";
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input p, .input input {
+    margin: 5px; 
+}
+
+input{
+    background-color: var(--cor-fundo);
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+}
+
+#senha{
+    font-size: small;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    color: var(--cor-senha)
+}
+
+button{
+    grid-area: "botao";
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+  }
+
+:root {
+    --cor-fundo: #F1F3F6;
+    --cor-senha: #1E2772;
+  }
+
+.direita{
+    grid-area: "direita";
+    display: flex;
+    justify-content: center;
+}
+
