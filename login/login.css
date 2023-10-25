@@ -86,6 +86,17 @@ input{
     border: none;
 }
 
+.input_after::after{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute
+}
+
+.imput_email::after{
+    background-image: url('../imagens/email.png');
+}
+
 #esqueceu_senha{
     font-size: small;
     display: flex;
