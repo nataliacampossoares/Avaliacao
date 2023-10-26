@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@100;300&display=swap');
 
+:root {
+    --cor-fundo: #F1F3F6;
+    --cor-senha: #1E2772;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -64,7 +69,7 @@ p{
     width:100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     margin-left: 10px;
     grid-area: "formulario";
 }
@@ -86,6 +91,32 @@ input{
     border: none;
 }
 
+.div-input {
+    position: relative;
+}
+
+.div-input::after{
+    content: '';
+    display: block;
+    width: 39px;
+    height: 39px;
+    background-color: #FD7401;
+    border-radius: 8px;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div-input-email::after {
+    background-image: url('../imagens/email.png');
+}
+
+.div-input-password::after {
+    background-image: url('../imagens/senha.png');
+}
+
 #esqueceu_senha{
     font-size: small;
     display: flex;
@@ -100,17 +131,13 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: center;
     background-color: white;
     transition: transform 0.2s;
 }
 
 button:hover {
     transform: scale(1.05);
-  }
-
-:root {
-    --cor-fundo: #F1F3F6;
-    --cor-senha: #1E2772;
   }
 
 .direita{
